@@ -1,4 +1,4 @@
-package com.nirorman.zendesk.exceptions;
+package main.java.com.nirorman.zendesk.exceptions;
 
 import java.io.IOException;
 
