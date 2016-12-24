@@ -1,4 +1,4 @@
-package com.nirorman.zendesk.api;
+package main.java.com.nirorman.zendesk.api;
 
 /**
  * Created by ormann on 14/12/2016.
