@@ -1,8 +1,8 @@
 package test.java.com.nirorman.zendesk;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import main.java.com.nirorman.zendesk.api.SinglePageFetcher;
-import main.java.com.nirorman.zendesk.impl.SinglePageFetcherImpl;
+import main.java.com.nirorman.zendesk.api.SinglePageFetcherService;
+import main.java.com.nirorman.zendesk.impl.SinglePageFetcherServiceImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,13 +15,13 @@ import static main.java.com.nirorman.zendesk.utils.FileNamesUtil.*;
  * (The Categories JSON has less than 30 entries)
  */
 
-public class SinglePageFetcherImplTest {
+public class SinglePageFetcherServiceImplTest {
     private JsonNode response;
 
     @Before
     public void setUp() throws Exception{
-        String url = String.format(URL_TEMPLATE, ACCOUNT_HOST, CATEGORIES, SORT_RESULTS);
-        SinglePageFetcher fetcher = new SinglePageFetcherImpl();
+        String url = String.format(URL_TEMPLATE, ACCOUNT_HOST, CATEGORIES, SORT_RESULTS, "");
+        SinglePageFetcherService fetcher = new SinglePageFetcherServiceImpl();
         response = fetcher.fetchSinglePage(url);
     }
 
