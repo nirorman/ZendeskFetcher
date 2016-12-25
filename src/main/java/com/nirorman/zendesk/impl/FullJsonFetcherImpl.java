@@ -2,7 +2,7 @@ package main.java.com.nirorman.zendesk.impl;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import main.java.com.nirorman.zendesk.api.FullJsonFetcher;
-import main.java.com.nirorman.zendesk.api.SinglePageFetcher;
+import main.java.com.nirorman.zendesk.api.SinglePageFetcherService;
 import main.java.com.nirorman.zendesk.exceptions.CreateHtmlFileException;
 import main.java.com.nirorman.zendesk.exceptions.FetchJsonException;
 
@@ -16,22 +16,43 @@ import static main.java.com.nirorman.zendesk.utils.FileNamesUtil.*;
  */
 public class FullJsonFetcherImpl implements FullJsonFetcher {
     private String accountHost;
-    private SinglePageFetcher singlePageFetcher;
+    private SinglePageFetcherService singlePageFetcherService;
     private HtmlCreatorImpl htmlCreator;
     private List<JsonNode> jsonNodeList;
 
     public FullJsonFetcherImpl(String host, String targetDirPath) {
         accountHost = host;
-        singlePageFetcher = new SinglePageFetcherImpl();
+        singlePageFetcherService = new SinglePageFetcherServiceImpl();
         htmlCreator = new HtmlCreatorImpl(targetDirPath);
         jsonNodeList = new ArrayList<>();
 
     }
+
+    public SinglePageFetcherService getSinglePageFetcherService() {
+        return singlePageFetcherService;
+    }
+
+    public void setSinglePageFetcherService(SinglePageFetcherService singlePageFetcherService) {
+        this.singlePageFetcherService = singlePageFetcherService;
+    }
+
+    public List<JsonNode> getJsonNodes() {
+        return jsonNodeList;
+    }
+
+    public void setJsonNodes(List<JsonNode> nodes) {
+        this.jsonNodeList = nodes;
+    }
+
     public void fetch() {
+        fetch("");
+    }
+
+    public void fetch(String pagination) {
         try {
-            String url = String.format(URL_TEMPLATE, accountHost, CATEGORIES, SORT_RESULTS);
+            String url = String.format(URL_TEMPLATE, accountHost, CATEGORIES, SORT_RESULTS, pagination);
             while (!url.equals("null")) {
-                JsonNode node = singlePageFetcher.fetchSinglePage(url);
+                JsonNode node = singlePageFetcherService.fetchSinglePage(url);
                 jsonNodeList.add(node); // don't dally with the response! store it and move on to get the next page
                 url = node.get(NEXT_PAGE).asText();
             }
@@ -47,4 +68,5 @@ public class FullJsonFetcherImpl implements FullJsonFetcher {
             System.out.println(String.format("Unexpected error: %s", e.getMessage()));
         }
     }
+
 }
