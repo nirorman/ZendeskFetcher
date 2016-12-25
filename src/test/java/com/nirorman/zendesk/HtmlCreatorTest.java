@@ -1,9 +1,9 @@
-package test.java.com.nirorman.zendesk;
+package com.nirorman.zendesk;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import main.java.com.nirorman.zendesk.api.HtmlCreator;
-import main.java.com.nirorman.zendesk.impl.HtmlCreatorImpl;
-import main.java.com.nirorman.zendesk.utils.FileUtil;
+import com.nirorman.zendesk.api.HtmlCreator;
+import com.nirorman.zendesk.impl.HtmlCreatorImpl;
+import com.nirorman.zendesk.utils.FileUtil;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -11,8 +11,8 @@ import org.junit.Test;
 import java.io.File;
 
 
-import static main.java.com.nirorman.zendesk.utils.FileNamesUtil.LOCAL_DIR;
-import static main.java.com.nirorman.zendesk.utils.FileNamesUtil.TARGET_FILE_NAME;
+import static com.nirorman.zendesk.utils.FileNamesUtil.LOCAL_DIR;
+import static com.nirorman.zendesk.utils.FileNamesUtil.TARGET_FILE_NAME;
 
 
 

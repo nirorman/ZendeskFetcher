@@ -1,11 +1,11 @@
-package test.java.com.nirorman.zendesk;
+package com.nirorman.zendesk;
 
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
-import static main.java.com.nirorman.zendesk.utils.FileNamesUtil.CATEGORIES_JSON;
+import static com.nirorman.zendesk.utils.FileNamesUtil.CATEGORIES_JSON;
 
 /**
  * Created by ormann on 14/12/2016.

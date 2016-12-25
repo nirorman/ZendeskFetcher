@@ -1,6 +1,6 @@
-package main.java.com.nirorman.zendesk.impl;
+package com.nirorman.zendesk.impl;
 
-import main.java.com.nirorman.zendesk.api.Category;
+import com.nirorman.zendesk.api.Category;
 
 /**
  * Created by ormann on 14/12/2016.

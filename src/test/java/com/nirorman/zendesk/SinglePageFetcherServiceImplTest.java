@@ -1,13 +1,13 @@
-package test.java.com.nirorman.zendesk;
+package com.nirorman.zendesk;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import main.java.com.nirorman.zendesk.api.SinglePageFetcherService;
-import main.java.com.nirorman.zendesk.impl.SinglePageFetcherServiceImpl;
+import com.nirorman.zendesk.api.SinglePageFetcherService;
+import com.nirorman.zendesk.impl.SinglePageFetcherServiceImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static main.java.com.nirorman.zendesk.utils.FileNamesUtil.*;
+import static com.nirorman.zendesk.utils.FileNamesUtil.*;
 
 /**
  * Created by ormann on 14/12/2016.

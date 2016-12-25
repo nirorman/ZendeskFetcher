@@ -1,10 +1,10 @@
-package main.java.com.nirorman.zendesk.impl;
+package com.nirorman.zendesk.impl;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import main.java.com.nirorman.zendesk.api.SinglePageFetcherService;
-import main.java.com.nirorman.zendesk.exceptions.FetchJsonException;
-import main.java.com.nirorman.zendesk.exceptions.UrlException;
+import com.nirorman.zendesk.api.SinglePageFetcherService;
+import com.nirorman.zendesk.exceptions.FetchJsonException;
+import com.nirorman.zendesk.exceptions.UrlException;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,10 +1,10 @@
-package main.java.com.nirorman.zendesk.impl;
+package com.nirorman.zendesk.impl;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import main.java.com.nirorman.zendesk.api.Category;
-import main.java.com.nirorman.zendesk.api.HtmlCreator;
-import main.java.com.nirorman.zendesk.exceptions.CreateHtmlFileException;
-import main.java.com.nirorman.zendesk.utils.FileUtil;
+import com.nirorman.zendesk.api.Category;
+import com.nirorman.zendesk.api.HtmlCreator;
+import com.nirorman.zendesk.exceptions.CreateHtmlFileException;
+import com.nirorman.zendesk.utils.FileUtil;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static main.java.com.nirorman.zendesk.utils.FileNamesUtil.*;
+import static com.nirorman.zendesk.utils.FileNamesUtil.*;
 
 
 /**

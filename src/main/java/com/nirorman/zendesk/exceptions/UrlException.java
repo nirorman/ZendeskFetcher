@@ -1,4 +1,4 @@
-package main.java.com.nirorman.zendesk.exceptions;
+package com.nirorman.zendesk.exceptions;
 
 
 /**

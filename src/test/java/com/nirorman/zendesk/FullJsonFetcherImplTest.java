@@ -3,13 +3,13 @@ package test.java.com.nirorman.zendesk;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import main.java.com.nirorman.zendesk.api.FullJsonFetcher;
-import main.java.com.nirorman.zendesk.api.SinglePageFetcherService;
-import main.java.com.nirorman.zendesk.exceptions.FetchJsonException;
-import main.java.com.nirorman.zendesk.exceptions.ReadResourceException;
-import main.java.com.nirorman.zendesk.exceptions.UrlException;
-import main.java.com.nirorman.zendesk.impl.FullJsonFetcherImpl;
-import main.java.com.nirorman.zendesk.utils.FileUtil;
+import com.nirorman.zendesk.api.FullJsonFetcher;
+import com.nirorman.zendesk.api.SinglePageFetcherService;
+import com.nirorman.zendesk.exceptions.FetchJsonException;
+import com.nirorman.zendesk.exceptions.ReadResourceException;
+import com.nirorman.zendesk.exceptions.UrlException;
+import com.nirorman.zendesk.impl.FullJsonFetcherImpl;
+import com.nirorman.zendesk.utils.FileUtil;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -24,7 +24,7 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static main.java.com.nirorman.zendesk.utils.FileNamesUtil.*;
+import static com.nirorman.zendesk.utils.FileNamesUtil.*;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 

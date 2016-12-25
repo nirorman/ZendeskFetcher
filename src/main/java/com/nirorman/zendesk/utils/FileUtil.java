@@ -1,7 +1,7 @@
-package main.java.com.nirorman.zendesk.utils;
+package com.nirorman.zendesk.utils;
 
 
-import main.java.com.nirorman.zendesk.exceptions.ReadResourceException;
+import com.nirorman.zendesk.exceptions.ReadResourceException;
 import org.apache.commons.io.IOUtils;
 
 import java.io.FileInputStream;

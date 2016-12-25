@@ -1,15 +1,13 @@
-package main.java.com.nirorman.zendesk.impl;
+package com.nirorman.zendesk.impl;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import main.java.com.nirorman.zendesk.api.FullJsonFetcher;
-import main.java.com.nirorman.zendesk.api.SinglePageFetcherService;
-import main.java.com.nirorman.zendesk.exceptions.CreateHtmlFileException;
-import main.java.com.nirorman.zendesk.exceptions.FetchJsonException;
-
+import com.nirorman.zendesk.api.FullJsonFetcher;
+import com.nirorman.zendesk.api.SinglePageFetcherService;
+import com.nirorman.zendesk.exceptions.CreateHtmlFileException;
+import com.nirorman.zendesk.exceptions.FetchJsonException;
 import java.util.ArrayList;
 import java.util.List;
-
-import static main.java.com.nirorman.zendesk.utils.FileNamesUtil.*;
+import static com.nirorman.zendesk.utils.FileNamesUtil.*;
 
 /**
  * Created by ormann on 21/12/2016.

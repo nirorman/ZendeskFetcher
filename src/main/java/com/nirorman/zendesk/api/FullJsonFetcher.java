@@ -1,4 +1,4 @@
-package main.java.com.nirorman.zendesk.api;
+package com.nirorman.zendesk.api;
 
 import com.fasterxml.jackson.databind.JsonNode;
 

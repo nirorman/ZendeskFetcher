@@ -1,8 +1,8 @@
-package main.java.com.nirorman.zendesk;
+package com.nirorman.zendesk;
 
-import main.java.com.nirorman.zendesk.api.FullJsonFetcher;
-import main.java.com.nirorman.zendesk.impl.FullJsonFetcherImpl;
-import static main.java.com.nirorman.zendesk.utils.FileNamesUtil.USAGE_MESSAGE;
+import com.nirorman.zendesk.api.FullJsonFetcher;
+import com.nirorman.zendesk.impl.FullJsonFetcherImpl;
+import static com.nirorman.zendesk.utils.FileNamesUtil.USAGE_MESSAGE;
 
 
 public class Main {
